@@ -12,8 +12,8 @@
     </ContentPage.Background>
     <ContentPage.Content>
         <Frame Margin="16" Padding="16"
-               BackgroundColor="White" HorizontalOptions="Center"
-               VerticalOptions="Center">
+               BackgroundColor="White" HasShadow="False"
+               HorizontalOptions="Center" VerticalOptions="Center">
             <Grid>
                 <Label FontSize="Body" Text="Gradient background dialog sample" />
                 <Button x:Name="CloseBtn" Grid.Row="1"
