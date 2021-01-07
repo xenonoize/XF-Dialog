@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="XF.Dialog.TapToCloseDialog"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	BackgroundColor="#A3000000">
+	<ContentPage.Content>
+		<Grid IsTabStop="True">
+			<Grid.GestureRecognizers>
+				<TapGestureRecognizer NumberOfTapsRequired="2" Tapped="TapGestureRecognizer_Tapped" />
+			</Grid.GestureRecognizers>
+
+			<Frame
+				Margin="16"
+				Padding="16"
+				BackgroundColor="White"
+				HorizontalOptions="Center"
+				VerticalOptions="Center">
+				<Grid>
+					<Label FontSize="Body" Text="Double-Tap anywhere close this modal" />
+				</Grid>
+			</Frame>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>
