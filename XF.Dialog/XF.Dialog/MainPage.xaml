@@ -8,6 +8,7 @@
                Text="XF Dialog Samples" />
         <Button x:Name="BasicDialogSampleBtn" Text="Basic" />
         <Button x:Name="AnimatedDialogSampleBtn" Text="Animated" />
+        <Button x:Name="GradientBackgroundDialogSampleBtn" Text="Gradient" />
 
     </StackLayout>
 

@@ -9,6 +9,12 @@ namespace XF.Dialog
 			InitializeComponent();
 			BasicDialogSampleBtn.Clicked += DialogSampleBtn_Clicked;
 			AnimatedDialogSampleBtn.Clicked += AnimatedDialogSampleBtn_Clicked;
+			GradientBackgroundDialogSampleBtn.Clicked += GradientBackgroundDialogSampleBtn_Clicked;
+		}
+
+		private void GradientBackgroundDialogSampleBtn_Clicked(object sender, System.EventArgs e)
+		{
+			Navigation.PushModalAsync(new GradientDialog());
 		}
 
 		private void AnimatedDialogSampleBtn_Clicked(object sender, System.EventArgs e)
