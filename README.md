@@ -1,1 +1,1 @@
-# XF-Dialog
+# XF Dialog Samples
