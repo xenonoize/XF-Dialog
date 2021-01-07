@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="XF.Dialog.AnimatedDialog" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"
+             x:Name="Root" BackgroundColor="#A3000000">
+    <ContentPage.Triggers>
+        <EventTrigger Event="Appearing">
+            <EventTrigger.Actions>
+                <xamanimation:BeginAnimation>
+                    <xamanimation:FadeInAnimation Easing="SinOut"
+                                                  Target="{Reference Root}"
+                                                  Duration="300" />
+                </xamanimation:BeginAnimation>
+            </EventTrigger.Actions>
+        </EventTrigger>
+        <EventTrigger Event="Disappearing">
+            <EventTrigger.Actions>
+                <xamanimation:BeginAnimation>
+                    <xamanimation:FadeOutAnimation Easing="SinOut"
+                                                   Target="{Reference Root}"
+                                                   Duration="300" />
+                </xamanimation:BeginAnimation>
+            </EventTrigger.Actions>
+        </EventTrigger>
+    </ContentPage.Triggers>
+    <ContentPage.Content>
+        <Frame Margin="16" Padding="16"
+               BackgroundColor="White" HorizontalOptions="Center"
+               VerticalOptions="Center">
+            <Grid>
+                <Label FontSize="Body" Text="Animated dialog sample" />
+                <Button x:Name="CloseBtn" Grid.Row="1"
+                        Text="Close" />
+            </Grid>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

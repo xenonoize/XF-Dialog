@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace XF.Dialog
 {
@@ -14,6 +7,18 @@ namespace XF.Dialog
 		public MainPage()
 		{
 			InitializeComponent();
+			BasicDialogSampleBtn.Clicked += DialogSampleBtn_Clicked;
+			AnimatedDialogSampleBtn.Clicked += AnimatedDialogSampleBtn_Clicked;
+		}
+
+		private void AnimatedDialogSampleBtn_Clicked(object sender, System.EventArgs e)
+		{
+			Navigation.PushModalAsync(new AnimatedDialog(), false);
+		}
+
+		private void DialogSampleBtn_Clicked(object sender, System.EventArgs e)
+		{
+			Navigation.PushModalAsync(new BasicDialogSample());
 		}
 	}
 }
