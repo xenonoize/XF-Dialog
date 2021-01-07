@@ -11,9 +11,9 @@
 			Padding="30,10,30,10"
 			FontSize="Title"
 			Text="XF Dialog Samples" />
+		<Button x:Name="GradientBackgroundDialogSampleBtn" Text="Gradient" />
 		<Button x:Name="BasicDialogSampleBtn" Text="Basic" />
 		<Button x:Name="AnimatedDialogSampleBtn" Text="Animated" />
-		<Button x:Name="TapToCloseDialogSampleBtn" Text="Tap to Close" />
 
 	</StackLayout>
 

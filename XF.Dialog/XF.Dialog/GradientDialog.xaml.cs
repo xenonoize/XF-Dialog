@@ -6,9 +6,9 @@ using Xamarin.Forms.Xaml;
 namespace XF.Dialog
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AnimatedDialog : ContentPage
+	public partial class GradientDialog : ContentPage
 	{
-		public AnimatedDialog()
+		public GradientDialog()
 		{
 			InitializeComponent();
 			CloseBtn.Clicked += CloseBtn_Clicked;
@@ -17,7 +17,7 @@ namespace XF.Dialog
 		private void CloseBtn_Clicked(object sender, EventArgs e)
 		{
 			// Closes this modal.
-			Navigation.PopModalAsync(false);
+			Navigation.PopModalAsync();
 		}
 	}
 }
