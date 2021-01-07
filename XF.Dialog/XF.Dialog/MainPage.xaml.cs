@@ -7,13 +7,14 @@ namespace XF.Dialog
 		public MainPage()
 		{
 			InitializeComponent();
-			BasicDialogSampleBtn.Clicked += DialogSampleBtn_Clicked;
+			BasicDialogSampleBtn.Clicked += BasicDialogSampleBtn_Clicked;
 			AnimatedDialogSampleBtn.Clicked += AnimatedDialogSampleBtn_Clicked;
 			GradientBackgroundDialogSampleBtn.Clicked += GradientBackgroundDialogSampleBtn_Clicked;
 		}
 
 		private void GradientBackgroundDialogSampleBtn_Clicked(object sender, System.EventArgs e)
 		{
+			// Opens a modal with default animation.
 			Navigation.PushModalAsync(new GradientDialog());
 		}
 
@@ -22,8 +23,9 @@ namespace XF.Dialog
 			Navigation.PushModalAsync(new AnimatedDialog(), false);
 		}
 
-		private void DialogSampleBtn_Clicked(object sender, System.EventArgs e)
+		private void BasicDialogSampleBtn_Clicked(object sender, System.EventArgs e)
 		{
+			// Opens a modal with default animation.
 			Navigation.PushModalAsync(new BasicDialogSample());
 		}
 	}

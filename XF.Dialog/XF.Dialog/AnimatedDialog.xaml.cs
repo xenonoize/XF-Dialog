@@ -16,6 +16,7 @@ namespace XF.Dialog
 
 		private void CloseBtn_Clicked(object sender, EventArgs e)
 		{
+			// Closes this modal.
 			Navigation.PopModalAsync(false);
 		}
 	}
