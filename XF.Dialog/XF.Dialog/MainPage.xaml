@@ -11,9 +11,16 @@
 			Padding="30,10,30,10"
 			FontSize="Title"
 			Text="XF Dialog Samples" />
-		<Button x:Name="GradientBackgroundDialogSampleBtn" Text="Gradient" />
+		<Label
+			FontSize="Default"
+			HorizontalOptions="Center"
+			LineBreakMode="WordWrap"
+			Text="Pure Xamarin.Forms based dialogs without renderers" />
 		<Button x:Name="BasicDialogSampleBtn" Text="Basic" />
-		<Button x:Name="AnimatedDialogSampleBtn" Text="Animated" />
+		<Button x:Name="GradientBackgroundDialogSampleBtn" Text="Gradient" />
+		<Button x:Name="AnimatedDialogSampleBtn" Text="Custom animation" />
+		<Button x:Name="TapToCloseDialogSampleBtn" Text="Tap to Close" />
+		<Button x:Name="DisableBackButtonSample" Text="Disabled back button (Android)" />
 
 	</StackLayout>
 

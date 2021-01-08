@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace XF.Dialog
+namespace XF.Dialog.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TapToCloseDialog : ContentPage

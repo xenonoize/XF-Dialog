@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="XF.Dialog.Pages.GradientDialog"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	BackgroundColor="Transparent">
+
+	<ContentPage.Content>
+		<Grid>
+			<Grid.Background>
+				<LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop Offset="0" Color="#1976d2" />
+						<GradientStop Offset="0.05" Color="#1976d2" />
+						<GradientStop Offset="0.35" Color="#99800080" />
+						<GradientStop Offset="1" Color="#99FF0000" />
+					</LinearGradientBrush.GradientStops>
+
+				</LinearGradientBrush>
+			</Grid.Background>
+			<Frame
+				Margin="16"
+				Padding="16"
+				BackgroundColor="White"
+				HasShadow="False"
+				HorizontalOptions="Center"
+				VerticalOptions="Center">
+				<Grid>
+					<Label FontSize="Body" Text="Gradient background dialog sample" />
+					<Button
+						x:Name="CloseBtn"
+						Grid.Row="1"
+						Text="Close" />
+				</Grid>
+			</Frame>
+		</Grid>
+
+	</ContentPage.Content>
+</ContentPage>

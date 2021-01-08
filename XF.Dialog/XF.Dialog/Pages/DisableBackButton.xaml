@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="XF.Dialog.Pages.DisableBackButton"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	BackgroundColor="#A3000000">
+	<ContentPage.Content>
+		<Frame
+			Margin="16"
+			Padding="16"
+			BackgroundColor="White"
+			HorizontalOptions="Center"
+			VerticalOptions="Center">
+			<Grid>
+				<Label FontSize="Body" TextType="Html">
+					<Label.Text>
+						<x:String>
+							<![CDATA[
+							On android you can disable the hardware back-button by overriding <i>OnBackButtonPressed</i> and returning <i>true</i>. This works for regular pages and modals.
+							]]>
+						</x:String>
+					</Label.Text>
+				</Label>
+				<Button
+					x:Name="CloseBtn"
+					Grid.Row="1"
+					Text="Close" />
+			</Grid>
+		</Frame>
+	</ContentPage.Content>
+</ContentPage>

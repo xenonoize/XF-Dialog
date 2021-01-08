@@ -1,5 +1,7 @@
 ﻿using Xamarin.Forms;
 
+using XF.Dialog.Pages;
+
 namespace XF.Dialog
 {
 	public partial class MainPage : ContentPage
@@ -8,16 +10,16 @@ namespace XF.Dialog
 		{
 			InitializeComponent();
 
-			BasicDialogSampleBtn.Clicked += DialogSampleBtn_Clicked;
+			BasicDialogSampleBtn.Clicked += BasicDialogSampleBtn_Clicked;
 			AnimatedDialogSampleBtn.Clicked += AnimatedDialogSampleBtn_Clicked;
 			GradientBackgroundDialogSampleBtn.Clicked += GradientBackgroundDialogSampleBtn_Clicked;
 			TapToCloseDialogSampleBtn.Clicked += TapToCloseDialogSampleBtn_Clicked;
+			DisableBackButtonSample.Clicked += DisableBackButtonSample_Clicked;
 		}
 
 		private void TapToCloseDialogSampleBtn_Clicked(object sender, System.EventArgs e)
 		{
 			Navigation.PushModalAsync(new TapToCloseDialog());
-			
 		}
 
 		private void GradientBackgroundDialogSampleBtn_Clicked(object sender, System.EventArgs e)
@@ -36,6 +38,11 @@ namespace XF.Dialog
 		{
 			// Opens a modal with default animation.
 			Navigation.PushModalAsync(new BasicDialogSample());
+		}
+
+		private void DisableBackButtonSample_Clicked(object sender, System.EventArgs e)
+		{
+			Navigation.PushModalAsync(new Pages.DisableBackButton());
 		}
 	}
 }

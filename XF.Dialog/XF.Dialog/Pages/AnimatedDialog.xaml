@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-	x:Class="XF.Dialog.AnimatedDialog"
+	x:Class="XF.Dialog.Pages.AnimatedDialog"
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"
@@ -9,8 +9,9 @@
 		<EventTrigger Event="Appearing">
 			<EventTrigger.Actions>
 				<xamanimation:BeginAnimation>
-					<xamanimation:FadeInAnimation
+					<xamanimation:FadeToAnimation
 						Easing="SinOut"
+						Opacity="1"
 						Target="{Reference Root}"
 						Duration="300" />
 				</xamanimation:BeginAnimation>
@@ -18,7 +19,7 @@
 					<xamanimation:ShakeAnimation
 						Delay="300"
 						Target="{Reference DialogContentContainer}"
-						Duration="700" />
+						Duration="500" />
 				</xamanimation:BeginAnimation>
 			</EventTrigger.Actions>
 		</EventTrigger>

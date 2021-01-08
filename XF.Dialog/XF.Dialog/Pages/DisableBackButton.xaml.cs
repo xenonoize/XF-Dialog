@@ -1,14 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace XF.Dialog
+namespace XF.Dialog.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class GradientDialog : ContentPage
+	public partial class DisableBackButton : ContentPage
 	{
-		public GradientDialog()
+		public DisableBackButton()
 		{
 			InitializeComponent();
 			CloseBtn.Clicked += CloseBtn_Clicked;
@@ -18,6 +22,11 @@ namespace XF.Dialog
 		{
 			// Closes this modal.
 			Navigation.PopModalAsync();
+		}
+
+		protected override bool OnBackButtonPressed()
+		{
+			return true;
 		}
 	}
 }

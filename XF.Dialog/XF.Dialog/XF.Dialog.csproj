@@ -22,22 +22,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="BasicDialogSample.xaml.cs">
+    <Compile Update="Pages\BasicDialogSample.xaml.cs">
       <DependentUpon>BasicDialogSample.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="AnimatedDialog.xaml">
+    <EmbeddedResource Update="Pages\AnimatedDialog.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="BasicDialogSample.xaml">
+    <EmbeddedResource Update="Pages\BasicDialogSample.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="GradientDialog.xaml">
+    <EmbeddedResource Update="Pages\DisableBackButton.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="TapToCloseDialog.xaml">
+    <EmbeddedResource Update="Pages\GradientDialog.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\TapToCloseDialog.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

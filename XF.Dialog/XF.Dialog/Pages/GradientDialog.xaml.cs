@@ -3,12 +3,12 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace XF.Dialog
+namespace XF.Dialog.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class BasicDialogSample : ContentPage
+	public partial class GradientDialog : ContentPage
 	{
-		public BasicDialogSample()
+		public GradientDialog()
 		{
 			InitializeComponent();
 			CloseBtn.Clicked += CloseBtn_Clicked;
